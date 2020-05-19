@@ -1,0 +1,175 @@
+body
+{
+    font-size: 15pt;
+}
+article
+{
+    border: solid;
+    border-color: rgb(180, 180, 180);
+    border-width: 5px;
+    margin:2%;
+    padding: 3%;
+}
+h2
+{
+    text-align: center;
+    font-size:2em;
+}
+.news h2{font-size:3vw;}
+h1
+{
+    font-size: 2em;
+    text-align: center;
+}
+li
+{
+    margin-top: 0.5%;
+    font-size:1em;
+
+}
+.navbar li
+    {
+        margin: 0.5%;
+        list-style: none;
+       
+    }
+    .navbar ul
+    {
+        display: flex;
+        margin: auto;
+        width: auto;
+        
+    }
+.widgets h2{font-size:5vh}
+
+.widgets div
+{
+    margin-top: 2%;
+    padding: 3%;
+    border: solid;
+    border-color: rgb(180, 180, 180);
+    border-width: 5px;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.main-content .mynav {
+    flex: 2;
+    order: 0;
+    margin: 3%;
+    border: solid;
+    border-color: rgb(206, 206, 206);
+    border-width: 5px;
+    height: fit-content;
+}
+
+.main-content .news {
+   
+    flex: 6;
+    order: 1;
+    margin: 2%;
+}
+
+.main-content .widgets {
+  
+    flex: 3;
+    order: 2;
+    margin: 2.5%;
+    flex-direction: column;
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-content {
+        
+        display: flex;
+        flex-direction: row;
+    }
+    .main-content .mynav { flex: 2;}
+    .main-content .widgets {
+       flex: 1;
+       display: none;
+    }
+    .main-content .news {
+        flex: 8;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .navbar li
+    {
+        margin: auto;
+        margin-top: 0.5%;
+        list-style: none;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .main-content .mynav {
+        
+        order: 0;
+        margin: auto;
+        padding: 3%;
+        text-align: center;
+        
+    }
+
+    .main-content .news {
+        
+        order: 1;
+       
+    }
+
+    .main-content .widgets {
+        
+        order: 2;
+        
+    }
+
+    .topbar {
+        padding: 0;
+    }
+
+    .topbar-inner {
+       
+        display: flex;
+      
+        flex-direction: column;
+        
+    }
+
+    
+    .topbar-inner .logo {     
+        order: 0;
+      
+    }
+
+    .topbar-inner .logo img {
+        padding: 1em;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        float: none;
+    }
+
+    .topbar-inner ul.navbar {
+        
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        background-color: #d1d1d1;
+        box-shadow: inset 0px 1px 0px #d1d1d1;
+    }
+    .topbar-inner ul.navbar li {
+        padding: 0;
+        flex: 1;
+      
+    }
+}
+
